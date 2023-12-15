@@ -56,12 +56,44 @@ public class Animal {
         System.out.println("Animal sleeping");
     }
 
+    private void toGo (){
+        System.out.println("Animal moves");
+    }
+
+    private void fly (){
+        System.out.println("Animal flies");
+    }
+
+    private void swim () {
+        System.out.println("Animal swiming");
+    }
+
     public void lifeCycle () {
         wakeup();
         eat();
+        toGo();
         play();
         sleep();
     }
+
+    public void lifeCycleForFish () {
+        wakeup();
+        eat();
+        swim();
+        sleep();
+    }
+
+    public void lifeCycleForDuck () {
+        wakeup();
+        eat();
+        swim();
+        fly();
+        toGo();
+        play();
+        sleep();
+    }
+
+
 
     @Override
     public String toString() {

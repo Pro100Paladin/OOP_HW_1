@@ -20,7 +20,24 @@ public class Main {
 
         barsik.lifeCycle();
 
+        System.out.println("-----------------------------------------");
 
+        DuckDuck mrDuck = new DuckDuck("BigbabyDuck", LocalDate.of(
+                2000,6,3),
+                new ArrayList<>(), "bullet wound", "-");
+
+        mrDuck.lifeCycleForDuck();
+
+        System.out.println("------------------------------------------");
+
+        System.out.println("Hello!, my name is Nemo!");
+
+        Fish nemo = new Fish("Nemo", LocalDate.of(
+                2011,3,5),
+                new ArrayList<>(), "-", "-","Blue");
+
+        nemo.lifeCycleForFish();
+        System.out.println("My colour is " + nemo.getColour());
     }
 
 }
