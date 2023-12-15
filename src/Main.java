@@ -7,24 +7,31 @@ public class Main {
         Cat barsik = new Cat("Barsik", LocalDate.of(
                 1993,6,6),
                 new ArrayList<>(), "Chumka", "Boss", 4);
-        System.out.println(barsik);
-        System.out.println(barsik.getLegsCount());
+
+        DuckDuck mrDuck = new DuckDuck("BigbabyDuck", LocalDate.of(
+                2000,6,3),
+                new ArrayList<>(), "bullet wound", "-");
 
         Animal eagle = new Eagle("Kesha", LocalDate.of(
                 1996,6,6),
                 new ArrayList<>(), "Chumka", "Boss");
+
+        Fish nemo = new Fish("Nemo", LocalDate.of(
+                2011,3,5),
+                new ArrayList<>(), "-", "-","Blue");
+
+        System.out.println(barsik);
+        System.out.println(barsik.getLegsCount());
+
         List<Animal> animals = new ArrayList<>();
         animals.add(barsik);
         animals.add(eagle);
+
         System.out.println("________________________________________");
 
         barsik.lifeCycle();
 
         System.out.println("-----------------------------------------");
-
-        DuckDuck mrDuck = new DuckDuck("BigbabyDuck", LocalDate.of(
-                2000,6,3),
-                new ArrayList<>(), "bullet wound", "-");
 
         mrDuck.lifeCycleForDuck();
 
@@ -32,11 +39,8 @@ public class Main {
 
         System.out.println("Hello!, my name is Nemo!");
 
-        Fish nemo = new Fish("Nemo", LocalDate.of(
-                2011,3,5),
-                new ArrayList<>(), "-", "-","Blue");
-
         nemo.lifeCycleForFish();
+
         System.out.println("My colour is " + nemo.getColour());
     }
 
