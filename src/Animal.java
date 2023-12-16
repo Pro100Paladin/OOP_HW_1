@@ -68,6 +68,10 @@ public class Animal {
         System.out.println("Animal swiming");
     }
 
+    private void crawl (){
+        System.out.println("Animal swiming");
+    }
+
     public void lifeCycle () {
         wakeup();
         eat();
@@ -96,6 +100,13 @@ public class Animal {
         wakeup();
         eat();
         play();
+        sleep();
+    }
+    public void lifeCycleForSnake () {
+        wakeup();
+        eat();
+        play();
+        crawl();
         sleep();
     }
 

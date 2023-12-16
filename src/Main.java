@@ -24,6 +24,9 @@ public class Main {
         Dog tuzik = new Dog("Tuzik", LocalDate.of(2019,12,24),
                 new ArrayList<>(),"_", "Djon", 12.3);
 
+        Snake zzz = new Snake("Zzz", LocalDate.of(2023,01,24),
+                new ArrayList<>(),  "-", "Vera", "strong");
+
         System.out.println(barsik);
         System.out.println(barsik.getLegsCount());
 
@@ -54,6 +57,13 @@ public class Main {
         System.out.println("My weight is " + tuzik.getWeight());
 
         System.out.println("------------------------------------------");
+
+        zzz.lifeCycleForSnake();
+
+        System.out.println("I have poison, " + zzz.getPoison());
+
+        System.out.println("------------------------------------------");
+
     }
 
 }
