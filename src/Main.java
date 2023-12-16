@@ -1,5 +1,6 @@
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Main {
@@ -19,6 +20,9 @@ public class Main {
         Fish nemo = new Fish("Nemo", LocalDate.of(
                 2011,3,5),
                 new ArrayList<>(), "-", "-","Blue");
+
+        Dog tuzik = new Dog("Tuzik", LocalDate.of(2019,12,24),
+                new ArrayList<>(),"_", "Djon", 12.3);
 
         System.out.println(barsik);
         System.out.println(barsik.getLegsCount());
@@ -42,6 +46,14 @@ public class Main {
         nemo.lifeCycleForFish();
 
         System.out.println("My colour is " + nemo.getColour());
+
+        System.out.println("------------------------------------------");
+
+        tuzik.lifeCycleForDog();
+
+        System.out.println("My weight is " + tuzik.getWeight());
+
+        System.out.println("------------------------------------------");
     }
 
 }

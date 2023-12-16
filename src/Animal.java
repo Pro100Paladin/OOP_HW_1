@@ -92,6 +92,12 @@ public class Animal {
         play();
         sleep();
     }
+    public void lifeCycleForDog () {
+        wakeup();
+        eat();
+        play();
+        sleep();
+    }
 
 
 
