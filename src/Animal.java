@@ -56,6 +56,10 @@ public class Animal {
         System.out.println("Animal sleeping");
     }
 
+    private void sleep (int time) {
+        System.out.println("Animal is sleep in  " + time);
+    }
+
     private void toGo (){
         System.out.println("Animal moves");
     }
@@ -103,11 +107,11 @@ public class Animal {
         sleep();
     }
     public void lifeCycleForSnake () {
-        wakeup();
+        wakeup(2);
         eat();
         play();
         crawl();
-        sleep();
+        sleep(23);
     }
 
 
