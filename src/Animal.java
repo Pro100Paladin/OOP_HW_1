@@ -73,7 +73,7 @@ public class Animal {
     }
 
     private void crawl (){
-        System.out.println("Animal swiming");
+        System.out.println("Animal crawling");
     }
 
     public void lifeCycle () {
