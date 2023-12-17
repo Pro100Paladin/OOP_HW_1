@@ -13,7 +13,7 @@ public class Main {
                 2000,6,3),
                 new ArrayList<>(), "bullet wound", "-");
 
-        Animal eagle = new Eagle("Kesha", LocalDate.of(
+        Eagle eagle = new Eagle("Kesha", LocalDate.of(
                 1996,6,6),
                 new ArrayList<>(), "Chumka", "Boss");
 
@@ -31,6 +31,13 @@ public class Main {
         System.out.println(barsik.getLegsCount());
 
         List<Animal> animals = new ArrayList<>();
+        animals.add(barsik);
+        animals.add(eagle);
+        animals.add(nemo);
+        animals.add(tuzik);
+        animals.add(zzz);
+
+
 
 
         System.out.println("________________________________________");
@@ -71,4 +78,3 @@ public class Main {
 
 }
 
-//    String name, LocalDate birthDate, List<String> vaccinations, String illness, String owner

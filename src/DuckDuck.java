@@ -8,7 +8,7 @@ public class DuckDuck extends Animal{
     }
     @Override
     protected void lifeCycle(){
-        wakeup();
+        wakeup(7);
         eat();
         play();
         toGo();
