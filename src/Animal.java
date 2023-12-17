@@ -68,11 +68,7 @@ public class Animal {
     }
 
     protected void lifeCycle () {
-        wakeup();
-        eat();
-        toGo();
-        play();
-        sleep();
+
     }
 
 
