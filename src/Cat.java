@@ -8,6 +8,13 @@ public class Cat extends Animal{
         super(name, birthDate, vaccinations, illness, owner);
         this.legsCount = legsCount;
     }
+@Override
+protected void lifeCycle () {
+    wakeup();
+    eat();
+    play();
+    sleep();
+}
 
     public int getLegsCount() {
         return legsCount;

@@ -5,6 +5,14 @@ public class Eagle extends Animal{
     public Eagle(String name, LocalDate birthDate, List<String> vaccinations, String illness, String owner) {
         super(name, birthDate, vaccinations, illness, owner);
     }
+    @Override
+    protected void lifeCycle(){
+        wakeup();
+        eat();
+        play();
+        fly();
+        sleep(23);
+    }
 
 
 }

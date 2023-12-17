@@ -31,8 +31,7 @@ public class Main {
         System.out.println(barsik.getLegsCount());
 
         List<Animal> animals = new ArrayList<>();
-        animals.add(barsik);
-        animals.add(eagle);
+
 
         System.out.println("________________________________________");
 
@@ -40,25 +39,29 @@ public class Main {
 
         System.out.println("-----------------------------------------");
 
-        mrDuck.lifeCycleForDuck();
+        System.out.println(mrDuck);
+        mrDuck.lifeCycle();
 
         System.out.println("------------------------------------------");
+        System.out.println(nemo);
 
         System.out.println("Hello!, my name is Nemo!");
 
-        nemo.lifeCycleForFish();
+        nemo.lifeCycle();
 
         System.out.println("My colour is " + nemo.getColour());
 
         System.out.println("------------------------------------------");
+        System.out.println(tuzik);
 
-        tuzik.lifeCycleForDog();
+        tuzik.lifeCycle();
 
         System.out.println("My weight is " + tuzik.getWeight());
 
         System.out.println("------------------------------------------");
+        System.out.println(zzz);
 
-        zzz.lifeCycleForSnake();
+        zzz.lifeCycle();
 
         System.out.println("I have poison, " + zzz.getPoison());
 

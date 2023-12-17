@@ -8,7 +8,14 @@ public class Snake extends Animal{
         super(name, birthDate, vaccinations, illness, owner);
         this.poison = poison;
     }
-
+@Override
+protected void lifeCycle(){
+        wakeup();
+        eat();
+        crawl();
+        eat();
+        sleep();
+}
     public String getPoison() {
         return poison;
     }

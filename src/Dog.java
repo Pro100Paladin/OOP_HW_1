@@ -8,7 +8,12 @@ public class Dog extends Animal{
         super(name, birthDate, vaccinations, illness, owner);
         this.weight = weight;
     }
-
+@Override
+protected void lifeCycle(){
+    wakeup();
+    eat();play();
+    sleep(17);
+}
     public double getWeight() {
         return weight;
     }

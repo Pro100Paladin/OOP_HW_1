@@ -8,6 +8,14 @@ public class Fish extends Animal{
         super(name, birthDate, vaccinations, illness, owner);
         this.colour = colour;
     }
+    @Override
+    protected void lifeCycle () {
+        wakeup();
+        eat();
+        play();
+        swim();
+        sleep();
+    }
     public String getColour (){
         return colour;
     }

@@ -36,84 +36,44 @@ public class Animal {
         return owner;
     }
 
-    private void wakeup (){
+    protected void wakeup (){
         System.out.println("Animal is wakeup !!");
     }
-
-    private void wakeup (int time){
+    protected void wakeup (int time){
         System.out.println("Animal is wakeup in " + time);
     }
-
-    private void eat (){
+    protected void eat (){
         System.out.println("Animal ate");
     }
-
-    private void play (){
+    protected void play (){
         System.out.println("Animal played");
     }
-
-    private void sleep () {
+    protected void sleep () {
         System.out.println("Animal sleeping");
     }
-
-    private void sleep (int time) {
+    protected void sleep (int time) {
         System.out.println("Animal is sleep in  " + time);
     }
-
-    private void toGo (){
+    protected void toGo (){
         System.out.println("Animal moves");
     }
-
-    private void fly (){
+    protected void fly (){
         System.out.println("Animal flies");
     }
-
-    private void swim () {
-        System.out.println("Animal swiming");
+    protected void swim () {
+        System.out.println("Animal swimming");
     }
-
-    private void crawl (){
+    protected void crawl (){
         System.out.println("Animal crawling");
     }
 
-    public void lifeCycle () {
+    protected void lifeCycle () {
         wakeup();
         eat();
         toGo();
         play();
         sleep();
     }
-
-    public void lifeCycleForFish () {
-        wakeup();
-        eat();
-        swim();
-        sleep();
-    }
-
-    public void lifeCycleForDuck () {
-        wakeup();
-        eat();
-        swim();
-        fly();
-        toGo();
-        play();
-        sleep();
-    }
-    public void lifeCycleForDog () {
-        wakeup();
-        eat();
-        play();
-        sleep();
-    }
-    public void lifeCycleForSnake () {
-        wakeup(2);
-        eat();
-        play();
-        crawl();
-        sleep(23);
-    }
-
 
 
     @Override
